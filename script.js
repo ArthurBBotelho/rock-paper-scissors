@@ -1,25 +1,9 @@
-const btn = document.querySelector('#send');
 
-btn.addEventListener('click', function(e) {
+//VARIABLES
 
-    e.preventDefault();
+const move = ["Rock", "Paper", "Scissors"];
 
-    const player = document.querySelector('#player');
-
-    const value = player.value;
-
-    console.log(value);
-
-})
-
-let moves = ['Rock', 'Paper', 'Scissors']
-
-const index = 3
-
-function getIndex(index) {
-    return Math.floor(Math.random() * index);
-}
-
-function computerPlay () {
-
+function computerPlay(){
+    //RANDOMLY RETURN 'ROCK PAPER SCISSORS'
+    
 }
