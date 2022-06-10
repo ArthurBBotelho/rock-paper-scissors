@@ -1,20 +1,33 @@
-//GET ELEMENTS
-
-
 
 //VARIABLES
 const move = ["Rock", "Paper", "Scissors"];
-let userPlay = "Scissors"
-let indexRandom
+let rockuser 
 let computerMove
+let indexRandom
+
 
 function computerPlay(){
     //RANDOMLY RETURN 'ROCK PAPER SCISSORS'
-    
     indexRandom = Math.floor (Math.random() * 3);
     computerMove = move[indexRandom]
         
 }
+
+function rockplay(){
+    computerPlay()
+    rockuser = "Rock"
+
+    if (computerMove === "Rock") {
+    return("Tie")
+    } else if
+    (computerMove === "Scissors") {
+    return("User wins") 
+    } else 
+    return("Computer wins")
+    
+}
+
+document.getElementById("result").innerHTML
 
 function whoWins(){
     computerPlay()
@@ -22,29 +35,30 @@ function whoWins(){
     console.log("User: ", userPlay)
 
     if (computerMove === "Rock" && userPlay === "Rock") {
-    console.log("Tie")
-    } else if 
+    return("Tie")
+    } else if
     (computerMove === "Rock" && userPlay === "Scissors") {
-    console.log("Computer wins") 
+    return("Computer wins") 
     } else if
     (computerMove === "Rock" && userPlay === "Paper") {
-    console.log("User wins") 
+    return("User wins") 
     } else if
     (computerMove === "Paper" && userPlay === "Paper") {
-    console.log("Tie") 
+    return("Tie") 
     } else if
     (computerMove === "Paper" && userPlay === "Scissors") {
-    console.log("User wins") 
+    return("User wins") 
     } else if
     (computerMove === "Paper" && userPlay === "Rock") {
-    console.log("Computer wins") 
+    return("Computer wins") 
     } else if
     (computerMove === "Scissors" && userPlay === "Scissors") {
-    console.log("Tie") 
+    return("Tie") 
     } else if
     (computerMove === "Scissors" && userPlay === "Paper") {
-    console.log("Computer wins") 
+    return("Computer wins") 
     } else
-    console.log("User wins") 
+    return("User wins") 
     
 }
+
