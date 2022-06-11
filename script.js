@@ -1,6 +1,6 @@
 
 //VARIABLES
-const move = ["Rock", "Paper", "Scissors"];
+const move = ["Rock", "Paper", "Scissor"];
 let rockuser 
 let computerMove
 let indexRandom
@@ -20,45 +20,38 @@ function rockplay(){
     if (computerMove === "Rock") {
     return("Tie")
     } else if
-    (computerMove === "Scissors") {
+    (computerMove === "Scissor") {
     return("User wins") 
     } else 
     return("Computer wins")
     
 }
 
-document.getElementById("result").innerHTML
-
-function whoWins(){
+function paperplay(){
     computerPlay()
-    console.log("Computer: ", computerMove)
-    console.log("User: ", userPlay)
+    rockuser = "Paper"
 
-    if (computerMove === "Rock" && userPlay === "Rock") {
+    if (computerMove === "Paper") {
     return("Tie")
     } else if
-    (computerMove === "Rock" && userPlay === "Scissors") {
-    return("Computer wins") 
-    } else if
-    (computerMove === "Rock" && userPlay === "Paper") {
+    (computerMove === "Rock") {
     return("User wins") 
+    } else 
+    return("Computer wins")
+    
+}
+
+function scissorplay(){
+    computerPlay()
+    rockuser = "Scissor"
+
+    if (computerMove === "Scissor") {
+    return("Tie")
     } else if
-    (computerMove === "Paper" && userPlay === "Paper") {
-    return("Tie") 
-    } else if
-    (computerMove === "Paper" && userPlay === "Scissors") {
+    (computerMove === "Paper") {
     return("User wins") 
-    } else if
-    (computerMove === "Paper" && userPlay === "Rock") {
-    return("Computer wins") 
-    } else if
-    (computerMove === "Scissors" && userPlay === "Scissors") {
-    return("Tie") 
-    } else if
-    (computerMove === "Scissors" && userPlay === "Paper") {
-    return("Computer wins") 
-    } else
-    return("User wins") 
+    } else 
+    return("Computer wins")
     
 }
 
