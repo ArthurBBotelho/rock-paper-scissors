@@ -54,4 +54,3 @@ function scissorplay(){
     return("Computer wins")
     
 }
-
