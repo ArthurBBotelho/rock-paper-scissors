@@ -11,7 +11,16 @@ const tesoura = document.getElementById("tesoura")
 let computador
 let jogador
 
-function jogadaJogador() {
-    
+function jogadaPedra() {
+    jogadorMostrar.innerHTML = "Pedra"
 }
+
+function jogadaPapel() {
+    jogadorMostrar.innerHTML = "Papel"
+}
+
+function jogadaTesoura() {
+    jogadorMostrar.innerHTML = "Tesoura"
+}
+
 
