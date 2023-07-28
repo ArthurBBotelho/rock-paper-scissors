@@ -23,6 +23,7 @@ function computadorAleatorio() {
     if (numeroAleatorio == 3){
     jogadaComputador.innerHTML = "Tesoura"
     }
+    console.log(numeroAleatorio)
 }
 
 //Funções dos botões para jogador
@@ -42,7 +43,7 @@ function jogadaPedra() {
     }
     console.log("Jogador: " + jogadaJogador.innerHTML)
     console.log("Computador: " + jogadaComputador.innerHTML)
-    console.log("Resultado: " + resultado)
+    console.log("Resultado: " + resultado.innerHTML)
 }
 
 function jogadaPapel() {
@@ -60,7 +61,7 @@ function jogadaPapel() {
     }
     console.log("Jogador: " + jogadaJogador.innerHTML)
     console.log("Computador: " + jogadaComputador.innerHTML)
-    console.log("Resultado: " + resultado)
+    console.log("Resultado: " + resultado.innerHTML)
 }
 
 function jogadaTesoura() {
@@ -78,5 +79,5 @@ function jogadaTesoura() {
     }
     console.log("Jogador: " + jogadaJogador.innerHTML)
     console.log("Computador: " + jogadaComputador.innerHTML)
-    console.log("Resultado: " + resultado)
+    console.log("Resultado: " + resultado.innerHTML)
 }
