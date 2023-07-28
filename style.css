@@ -1,5 +1,32 @@
 *{
     font-family: sans-serif;
     background-color: #E9F8FF;
+    text-decoration: none;
+    padding: 10px;
 }
 
+.comoJogar {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #2B373D;
+}
+
+.bg-comoJogar {
+    background-color: #FFE0BA;
+}
+
+
+button{
+    border-style: none;
+}
+.bg-button {
+    border-style: none;
+}
+
+.bg-button:hover {
+    background-color: #89B2C4;
+}
+
+.bg-button:active {
+    background-color: #6F8F9E;
+}

@@ -11,12 +11,40 @@
 <body>
     <header>
         <h1>Pedra Papel Tesoura</h1>
+        <div class="comoJogar bg-comoJogar">
+            <h2 class="bg-comoJogar">Como jogar!</h2>
+            <p class="bg-comoJogar">No jogo de Pedra, Papel, Tesoura, os jogadores devem esticar a mão, na qual cada um
+                formou um símbolo
+                elegido por cada um.
+                <br>
+                <img class="bg-comoJogar" src="pedra.png"> significa Pedra;
+                <br>
+                <img class="bg-comoJogar" src="papel.png"> A mão aberta significa Papel;
+                <br>
+                <img class="bg-comoJogar" src="tesoura.png"> A mão com os dedos indicador e médio estendidos significa
+                Tesoura.
+            </p>
+
+            <p class="bg-comoJogar">
+                Os participantes comparam os símbolos de suas mãos para decidir quem ganha a partida, da seguinte
+                maneira:
+                <br>
+                Pedra ganha da Tesoura (a amassa e quebra)
+                <br>
+                Tesoura ganha do Papel (o corta)
+                <br>
+                Papel ganha da Pedra (a embrulha)
+                <br>
+                No caso que os participantes coincidam mostrando o mesmo símbolo, acontece um empate e se joga outra
+                vez até desempatar.
+            </p>
+        </div>
     </header>
 
     <div>
-        <button onclick="jogadaPedra()" id="pedra"><img src="pedra.png"></button>
-        <button onclick="jogadaPapel()" id="papel"><img src="papel.png"></button>
-        <button onclick="jogadaTesoura()" id="tesoura"><img src="tesoura.png"></button>
+        <button onclick="jogadaPedra()" id="pedra"><img class="bg-button" src="pedra.png"></button>
+        <button onclick="jogadaPapel()" id="papel"><img class="bg-button" src="papel.png"></button>
+        <button onclick="jogadaTesoura()" id="tesoura"><img class="bg-button" src="tesoura.png"></button>
     </div>
 
     <div>
@@ -24,6 +52,10 @@
         <p>Computador: <span id="computador"></span></p>
         <p>Resultado: <span id="resultado"></span></p>
     </div>
+
+    <footer class="footer">
+        Este aplicativo foi desenvolvido por Arthur Botelho em Julho de 2023
+    </footer>
 
     <script src="script.js"></script>
 </body>
