@@ -2,7 +2,9 @@
 
 const jogadaComputador = document.getElementById("computador")
 const jogadaJogador = document.getElementById("jogador")
-const resultado = document.getElementById("resultado")
+const resultadoTela = document.getElementById("resultado")
+
+let resultado
 
 const pedra = document.getElementById("pedra")
 const papel = document.getElementById("papel")
@@ -12,17 +14,14 @@ const tesoura = document.getElementById("tesoura")
 
 function jogadaPedra() {
     jogadaJogador.innerHTML = "Pedra"
-    
 }
 
 function jogadaPapel() {
     jogadaJogador.innerHTML = "Papel"
-    
 }
 
 function jogadaTesoura() {
     jogadaJogador.innerHTML = "Tesoura"
-    
 }
 
 //Função para computador jogar aleatório
@@ -40,6 +39,7 @@ function computadorAleatorio() {
     jogadaComputador.innerHTML = "Tesoura"
     }
     console.log(numeroAleatorio)
+    console.log("Computador: " + jogadaComputador.innerHTML)
 }
 
 //Resultado
@@ -48,30 +48,30 @@ function jogadaResultado() {
     
     computadorAleatorio()
 
-    if (jogadaJogador === jogadaComputador){
-        resultado.innerHTML = "Empate"
+    if (jogadaJogador == "Pedra" && jogadaComputador == "Papel"){
+        resultado = "Voce Perdeu!"
     }
-    if (jogadaJogador === "Pedra" && jogadaComputador === "Papel"){
-        resultado.innerHTML = "Voce Perdeu!"
+    else if (jogadaJogador == "Pedra" && jogadaComputador == "Tesoura"){
+        resultado = "Voce Venceu!"
     }
-    if (jogadaJogador === "Pedra" && jogadaComputador === "Tesoura"){
-        resultado.innerHTML = "Voce Venceu!"
+    else if (jogadaJogador == "Papel" && jogadaComputador == "Tesoura"){
+        resultado = "Voce Perdeu!"
     }
-    if (jogadaJogador === "Papel" && jogadaComputador === "Tesoura"){
-        resultado.innerHTML = "Voce Perdeu!"
+    else if (jogadaJogador == "Papel" && jogadaComputador == "Pedra"){
+        resultado = "Voce Venceu!"
     }
-    if (jogadaJogador === "Papel" && jogadaComputador === "Pedra"){
-        resultado.innerHTML = "Voce Venceu!"
+    else if (jogadaJogador == "Tesoura" && jogadaComputador == "Pedra"){
+        resultado = "Voce perdeu!"
     }
-    if (jogadaJogador === "Tesoura" && jogadaComputador === "Pedra"){
-        resultado.innerHTML = "Voce perdeu!"
+    else if (jogadaJogador == "Tesoura" && jogadaComputador == "Papel"){
+        resultado = "Voce Venceu!"
     }
-    if (jogadaJogador === "Tesoura" && jogadaComputador === "Papel"){
-        resultado.innerHTML = "Voce Venceu!"
+    else {
+        resultado = "Empate"
     }
-    console.log("Computador: " + jogadaComputador)
-    console.log("Jogador: " + jogadaJogador)
-    console.log("Resultado: " + resultado)
+ 
+    console.log("Jogador: " + jogadaJogador.innerHTML)
+    console.log("Resultado: " + resultado.innerHTML)
 }
 
 
