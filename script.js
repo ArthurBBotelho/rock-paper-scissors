@@ -5,23 +5,19 @@ const jogadaJogador = document.getElementById("jogador")
 
 let resultado = document.getElementById("resultado")
 
-const pedra = document.getElementById("pedra")
-const papel = document.getElementById("papel")
-const tesoura = document.getElementById("tesoura")
-
 //Função para computador jogar aleatório
 
 function computadorAleatorio() {
     const numeroAleatorio = Math.floor(Math.random() * 3) + 1
 
-    if (numeroAleatorio == 1){
-    jogadaComputador.innerHTML = "Pedra"
+    if (numeroAleatorio == 1) {
+        jogadaComputador.innerHTML = "Pedra"
     }
-    if (numeroAleatorio == 2){
-    jogadaComputador.innerHTML  = "Papel"
+    if (numeroAleatorio == 2) {
+        jogadaComputador.innerHTML = "Papel"
     }
-    if (numeroAleatorio == 3){
-    jogadaComputador.innerHTML = "Tesoura"
+    if (numeroAleatorio == 3) {
+        jogadaComputador.innerHTML = "Tesoura"
     }
     console.log(numeroAleatorio)
 }
@@ -32,10 +28,10 @@ function jogadaPedra() {
     jogadaJogador.innerHTML = "Pedra"
     computadorAleatorio()
 
-    if (jogadaComputador.innerHTML == "Papel"){
+    if (jogadaComputador.innerHTML == "Papel") {
         resultado.innerHTML = "Voce Perdeu!"
     }
-    else if (jogadaComputador.innerHTML == "Tesoura"){
+    else if (jogadaComputador.innerHTML == "Tesoura") {
         resultado.innerHTML = "Voce Venceu!"
     }
     else {
@@ -50,10 +46,10 @@ function jogadaPapel() {
     jogadaJogador.innerHTML = "Papel"
     computadorAleatorio()
 
-    if (jogadaComputador.innerHTML == "Tesoura"){
+    if (jogadaComputador.innerHTML == "Tesoura") {
         resultado.innerHTML = "Voce Perdeu!"
     }
-    else if (jogadaComputador.innerHTML == "Pedra"){
+    else if (jogadaComputador.innerHTML == "Pedra") {
         resultado.innerHTML = "Voce Venceu!"
     }
     else {
@@ -68,10 +64,10 @@ function jogadaTesoura() {
     jogadaJogador.innerHTML = "Tesoura"
     computadorAleatorio()
 
-    if (jogadaComputador.innerHTML == "Pedra"){
+    if (jogadaComputador.innerHTML == "Pedra") {
         resultado.innerHTML = "Voce perdeu!"
     }
-    else if (jogadaComputador.innerHTML == "Papel"){
+    else if (jogadaComputador.innerHTML == "Papel") {
         resultado.innerHTML = "Voce Venceu!"
     }
     else {
