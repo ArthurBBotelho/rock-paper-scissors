@@ -6,17 +6,6 @@
     padding: 0%;
 }
 
-
-.comoJogar {
-    border-radius: 15px;
-    border-style: solid;
-    border-color: #2B373D;
-}
-
-.bg-comoJogar {
-    background-color: #FFE0BA;
-}
-
 button {
     border-style: none;
 }
@@ -38,8 +27,42 @@ button {
     border-style: solid;
     border-color: #2B373D;
     background-color: #FFE0BA;
-
 }
+
+/*-------------------------------COMO JOGAR---------------------------------*/
+
+.comoJogar {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #2B373D;
+    margin: 2% 10% 2% 10%;
+    padding: 2%;
+}
+
+.iconeJogada {
+    width: 90%;
+    padding: 20px;
+    background-color: #FFE0BA;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+}
+
+.iconeExplica {
+    padding: 1%;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #2B373D;
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bg-comoJogar {
+    background-color: #FFE0BA;
+}
+
 
 /*-------------------------------FOOTER---------------------------------*/
 
@@ -47,5 +70,5 @@ button {
     background-color: #2B373D;
     color: #E9F8FF;
     padding: 2% 10% 2% 10%;
-    margin-top: 20px;
+    margin-top: 50px;
 }
