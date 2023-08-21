@@ -13,12 +13,14 @@
         <h1>Pedra Papel Tesoura</h1>
     </header>
 
-    <div>
-        <button onclick="jogadaPedra()" id="pedra"><img class="bg-button" src="pedra.png"></button>
-        <button onclick="jogadaPapel()" id="papel"><img class="bg-button" src="papel.png"></button>
-        <button onclick="jogadaTesoura()" id="tesoura"><img class="bg-button" src="tesoura.png"></button>
+    <div class="jogadasJogo">
+        <p>Faça sua jogada</p>
+        <div>
+            <button onclick="jogadaPedra()" id="pedra"><img class="bg-button" src="pedra.png"></button>
+            <button onclick="jogadaPapel()" id="papel"><img class="bg-button" src="papel.png"></button>
+            <button onclick="jogadaTesoura()" id="tesoura"><img class="bg-button" src="tesoura.png"></button>
+        </div>
     </div>
-
     <main class="jogoPrincipal">
         <div class="jogador">
             <p>Jogador: <span id="jogador"></span></p>

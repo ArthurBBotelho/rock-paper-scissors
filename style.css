@@ -6,6 +6,8 @@
     padding: 0%;
 }
 
+/*-------------------------------JOGADAS---------------------------------*/
+
 button {
     border-style: none;
 }
@@ -22,11 +24,25 @@ button {
     background-color: #6F8F9E;
 }
 
-.jogoPrincipal {
+.jogador {
+    padding: 1%;
     border-radius: 15px;
     border-style: solid;
     border-color: #2B373D;
-    background-color: #FFE0BA;
+}
+
+.computador {
+    padding: 1%;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #2B373D;
+}
+
+.resultado {
+    padding: 1%;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #2B373D;
 }
 
 /*-------------------------------COMO JOGAR---------------------------------*/
