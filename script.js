@@ -51,37 +51,38 @@ function jogadaPedra() {
 
 function jogadaPapel() {
     jj = "Papel"
-    jogadaJogador.innerHTML = "Papel"
+    jogadaJogador.innerHTML = "<img class='bg-button' src='papel.png'></img>"
     computadorAleatorio()
 
-    if (jogadaComputador.innerHTML == "Tesoura") {
+    if (jc == "Tesoura") {
         resultado.innerHTML = "Voce Perdeu!"
     }
-    else if (jogadaComputador.innerHTML == "Pedra") {
+    else if (jc == "Pedra") {
         resultado.innerHTML = "Voce Venceu!"
     }
     else {
         resultado.innerHTML = "Empate"
     }
-    console.log("Jogador: " + jogadaJogador.innerHTML)
-    console.log("Computador: " + jogadaComputador.innerHTML)
+    console.log("Jogador: " + jj)
+    console.log("Computador: " + jc)
     console.log("Resultado: " + resultado.innerHTML)
 }
 
 function jogadaTesoura() {
-    jogadaJogador.innerHTML = "Tesoura"
+    jj = "Tesoura"
+    jogadaJogador.innerHTML = "<img class='bg-button' src='tesoura.png'></img>"
     computadorAleatorio()
 
-    if (jogadaComputador.innerHTML == "Pedra") {
+    if (jc == "Pedra") {
         resultado.innerHTML = "Voce perdeu!"
     }
-    else if (jogadaComputador.innerHTML == "Papel") {
+    else if (jc == "Papel") {
         resultado.innerHTML = "Voce Venceu!"
     }
     else {
         resultado.innerHTML = "Empate"
     }
-    console.log("Jogador: " + jogadaJogador.innerHTML)
-    console.log("Computador: " + jogadaComputador.innerHTML)
+    console.log("Jogador: " + jj)
+    console.log("Computador: " + jc)
     console.log("Resultado: " + resultado.innerHTML)
 }
