@@ -6,6 +6,23 @@
     padding: 0%;
 }
 
+/*-------------------------------JOGO---------------------------------*/
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #2B373D;
+}
+
+.jogadasJogo {
+    display: flex;
+    margin: 2% 35% 2% 35%;
+    justify-content: space-around;
+}
+
 /*-------------------------------JOGADAS---------------------------------*/
 
 button {
@@ -24,7 +41,13 @@ button {
     background-color: #6F8F9E;
 }
 
+.jogoPrincipal {
+    margin: 2% 10% 2% 10%;
+    
+}
+
 .jogador {
+    margin-top: 1%;
     padding: 1%;
     border-radius: 15px;
     border-style: solid;
@@ -32,6 +55,7 @@ button {
 }
 
 .computador {
+    margin-top: 1%;
     padding: 1%;
     border-radius: 15px;
     border-style: solid;
@@ -39,10 +63,14 @@ button {
 }
 
 .resultado {
+    margin-top: 1%;
     padding: 1%;
     border-radius: 15px;
     border-style: solid;
     border-color: #2B373D;
+    color: #2B373D;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /*-------------------------------COMO JOGAR---------------------------------*/
